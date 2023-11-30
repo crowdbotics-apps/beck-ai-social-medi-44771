@@ -17,7 +17,7 @@ const App = () => {
         <Image source={{
         uri: 'https://tinyurl.com/42evm3m3'
       }} style={_styles.LIeIgHuv} />
-        <Text style={_styles.qojIyCIk}>Share this App</Text>
+        <Text style={_styles.qojIyCIk}>{"Share content\nFeed details\nShare outside the app on available social options"}</Text>
       </View>
       <Button title="Share" onPress={onSharePress} />
     </SafeAreaView>;
@@ -44,6 +44,7 @@ const _styles = StyleSheet.create({
   qojIyCIk: {
     fontSize: 24,
     fontWeight: "bold",
-    marginTop: 10
+    marginTop: 10,
+    textAlign: "center"
   }
 });
