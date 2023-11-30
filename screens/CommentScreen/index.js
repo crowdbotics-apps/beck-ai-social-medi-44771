@@ -20,22 +20,22 @@ const CommentScreen = () => {
 
   const renderItem = ({
     item
-  }) => <View style={_styles.IRYvLcWk}>
+  }) => <View style={_styles.DiprNibi}>
       <Image source={{
       uri: item.image
-    }} style={_styles.eZrXCFkj} />
-      <View style={_styles.MDRFaZOp}>
-        <Text style={_styles.dbRnRaBm}>{item.username}</Text>
-        <Text style={_styles.NZdkGRKp}>{item.comment}</Text>
-        <Text style={_styles.LqpnpJVs}>{item.date}</Text>
+    }} style={_styles.YjPNBHyZ} />
+      <View style={_styles.iBLhgQEG}>
+        <Text style={_styles.szcpgolh}>{item.username}</Text>
+        <Text style={_styles.nWHLXKQQ}>{item.comment}</Text>
+        <Text style={_styles.GpBpauye}>{item.date}</Text>
       </View>
     </View>;
 
-  return <SafeAreaView style={_styles.oSaveEeS}>
+  return <SafeAreaView style={_styles.GRcXeuWd}>
       <Button title="Back" onPress={() => {}} />
       <FlatList data={dummyData} renderItem={renderItem} keyExtractor={item => item.id} />
-      <View style={_styles.MtaHPFqu}>
-        <TextInput style={_styles.TlbxiVVz} onChangeText={text => setComment(text)} value={comment} placeholder="Add a comment" />
+      <View style={_styles.aexFnbFn}>
+        <TextInput style={_styles.IGTGZPnZ} onChangeText={text => setComment(text)} value={comment} placeholder="Add a comment" />
         <Button title="Post" onPress={() => {}} />
       </View>
     </SafeAreaView>;
@@ -44,38 +44,38 @@ const CommentScreen = () => {
 export default CommentScreen;
 
 const _styles = StyleSheet.create({
-  IRYvLcWk: {
+  DiprNibi: {
     flexDirection: "row",
     margin: 10
   },
-  eZrXCFkj: {
+  YjPNBHyZ: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  MDRFaZOp: {
+  iBLhgQEG: {
     marginLeft: 10
   },
-  dbRnRaBm: {
+  szcpgolh: {
     fontSize: 18
   },
-  NZdkGRKp: {
+  nWHLXKQQ: {
     fontSize: 16,
     color: "gray"
   },
-  LqpnpJVs: {
+  GpBpauye: {
     fontSize: 14,
     color: "gray"
   },
-  oSaveEeS: {
+  GRcXeuWd: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  MtaHPFqu: {
+  aexFnbFn: {
     flexDirection: "row",
     margin: 10
   },
-  TlbxiVVz: {
+  IGTGZPnZ: {
     flex: 1,
     borderColor: "gray",
     borderWidth: 1,
