@@ -21,14 +21,14 @@ const ProfileScreen = () => {
     } // More posts...
     ]
   };
-  return <SafeAreaView style={_styles.pglDQRuM}>
+  return <SafeAreaView style={_styles.FdViIKYu}>
       <ScrollView>
-        <View style={_styles.IAqsKreM}>
+        <View style={_styles.neqNDSku}>
           <Image source={{
           uri: dummyData.profilePicture
-        }} style={_styles.lKszomUC} />
+        }} style={_styles.aTGTMkBn} />
           <Button title="Update profile picture" onPress={() => {}} />
-          <Text style={_styles.StgBOwPy}>{dummyData.fullName}</Text>
+          <Text style={_styles.gjfrIOGT}>{dummyData.fullName}</Text>
           <Text>{dummyData.email}</Text>
           <Text>{dummyData.username}</Text>
           <Text>{dummyData.phoneNumber}</Text>
@@ -41,12 +41,12 @@ const ProfileScreen = () => {
           <Text>Following: {dummyData.following}</Text>
           <Text>Posts: {dummyData.posts.length}</Text>
         </View>
-        {dummyData.posts.map(post => <View key={post.id} style={_styles.UBQwpQpR}>
+        {dummyData.posts.map(post => <View key={post.id} style={_styles.JZvcxpok}>
             <Text>{post.caption}</Text>
             <TouchableOpacity onPress={() => {}}>
               <Image source={{
             uri: post.image
-          }} style={_styles.jrmMVZeU} />
+          }} style={_styles.WlWYvWxP} />
             </TouchableOpacity>
             <Text>Likes: {post.likes}</Text>
             <Text>Comments: {post.comments}</Text>
@@ -59,27 +59,27 @@ const ProfileScreen = () => {
 export default ProfileScreen;
 
 const _styles = StyleSheet.create({
-  pglDQRuM: {
+  FdViIKYu: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  IAqsKreM: {
+  neqNDSku: {
     alignItems: "center",
     padding: 20
   },
-  lKszomUC: {
+  aTGTMkBn: {
     width: 100,
     height: 100,
     borderRadius: 50
   },
-  StgBOwPy: {
+  gjfrIOGT: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  UBQwpQpR: {
+  JZvcxpok: {
     margin: 20
   },
-  jrmMVZeU: {
+  WlWYvWxP: {
     width: "100%",
     height: 200
   }
