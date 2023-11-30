@@ -21,17 +21,17 @@ const PaymentScreen = ({
       <Text>{item.card}</Text>
     </TouchableOpacity>;
 
-  return <SafeAreaView style={_styles.SuEjNWzV}>
-      <Text style={_styles.EUxWQHCR}>Payment Amount</Text>
-      <Text style={_styles.fcHPbAfa}>Details of the selected Model</Text>
-      <Text style={_styles.tCaESkWG}>Select the card</Text>
+  return <SafeAreaView style={_styles.tLFsdJgK}>
+      <Text style={_styles.CYZJKmTK}>Payment Amount</Text>
+      <Text style={_styles.vnYplRVs}>Details of the selected Model</Text>
+      <Text style={_styles.VOgVsOrL}>Select the card</Text>
       <FlatList data={dummyData} renderItem={renderItem} keyExtractor={item => item.id} />
       <Button title="Add a new card" onPress={() => navigation.navigate('AddCard')} />
-      <View style={_styles.iifKGrVA}>
+      <View style={_styles.TYjNnpgU}>
         <Button title="Pay" onPress={() => console.log('Payment successful')} />
         <Button title="Cancel" onPress={() => navigation.goBack()} />
       </View>
-      <Image style={_styles.oJHLuhjO} source={{
+      <Image style={_styles.nWAsjxGu} source={{
       uri: 'https://tinyurl.com/42evm3m3'
     }} />
     </SafeAreaView>;
@@ -40,27 +40,27 @@ const PaymentScreen = ({
 export default PaymentScreen;
 
 const _styles = StyleSheet.create({
-  SuEjNWzV: {
+  tLFsdJgK: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
   },
-  EUxWQHCR: {
+  CYZJKmTK: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  fcHPbAfa: {
+  vnYplRVs: {
     fontSize: 20
   },
-  tCaESkWG: {
+  VOgVsOrL: {
     fontSize: 18,
     marginTop: 20
   },
-  iifKGrVA: {
+  TYjNnpgU: {
     flexDirection: "row",
     marginTop: 20
   },
-  oJHLuhjO: {
+  nWAsjxGu: {
     width: 100,
     height: 100,
     marginTop: 20
