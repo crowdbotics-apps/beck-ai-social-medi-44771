@@ -12,47 +12,47 @@ const ScreenComponent = () => {
     comments: 45,
     followers: 678
   };
-  return <SafeAreaView style={_styles.kqnwxbIk}>
-      <TextInput placeholder="Search" style={_styles.EsijljHI} />
+  return <SafeAreaView style={_styles.YtlxfciA}>
+      <TextInput placeholder="Search" style={_styles.IEMSiKSp} />
       <ScrollView>
-        <View style={_styles.eQCSxiZK}>
-          <Text style={_styles.ZxEQgEAu}>Trending posts</Text>
-          <Text style={_styles.EmwxXzsB}>Most liked</Text>
-          <Text style={_styles.jevTckSh}>Most Commented</Text>
+        <View style={_styles.iJMTlcUw}>
+          <Text style={_styles.nOycANSg}>Trending posts</Text>
+          <Text style={_styles.YUdONuXT}>Most liked</Text>
+          <Text style={_styles.lMlbmkfS}>Most Commented</Text>
         </View>
-        <View style={_styles.LvlIrZzy}>
-          <Text style={_styles.RTrNaGgt}>Search results for Feeds</Text>
-          <View style={_styles.tkccUeWH}>
+        <View style={_styles.vgJsaCDh}>
+          <Text style={_styles.FbMvEawO}>Search results for Feeds</Text>
+          <View style={_styles.mLPrwiNw}>
             <Image source={{
             uri: dummyData.profilePicture
-          }} style={_styles.MSworQfw} />
-            <Text style={_styles.RjzzlhyD}>{dummyData.username}</Text>
+          }} style={_styles.ZYOWfnmu} />
+            <Text style={_styles.QIHsVjbv}>{dummyData.username}</Text>
           </View>
           <Text>{dummyData.caption}</Text>
           <Image source={{
           uri: dummyData.image
-        }} style={_styles.bLIkCxmO} />
-          <View style={_styles.NgXkKWhN}>
+        }} style={_styles.SMMbhIeE} />
+          <View style={_styles.InBIIeKF}>
             <Text>{dummyData.likes} likes</Text>
             <Text>{dummyData.comments} comments</Text>
           </View>
-          <TouchableOpacity style={_styles.uGJUmuVv}>
+          <TouchableOpacity style={_styles.THdlPTyL}>
             <Text>Go to Comments screen</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={_styles.BbDnFAif}>
+          <TouchableOpacity style={_styles.oYDJurOr}>
             <Text>Report</Text>
           </TouchableOpacity>
         </View>
-        <View style={_styles.Osxiafes}>
-          <Text style={_styles.bRhTbaHr}>Search for users</Text>
-          <View style={_styles.IzphhtMu}>
+        <View style={_styles.CzQkQuab}>
+          <Text style={_styles.muDuZlRv}>Search for users</Text>
+          <View style={_styles.NuleBtjq}>
             <Image source={{
             uri: dummyData.profilePicture
-          }} style={_styles.EmQBkLAa} />
-            <Text style={_styles.KZBSgTVh}>{dummyData.username}</Text>
+          }} style={_styles.BNnzYXQX} />
+            <Text style={_styles.ppEIgSyl}>{dummyData.username}</Text>
           </View>
           <Text>{dummyData.followers} followers</Text>
-          <TouchableOpacity style={_styles.XJIrtVCV}>
+          <TouchableOpacity style={_styles.oKWSKGjE}>
             <Text>Go to Other user profile screen</Text>
           </TouchableOpacity>
         </View>
@@ -63,87 +63,87 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  kqnwxbIk: {
+  YtlxfciA: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  EsijljHI: {
+  IEMSiKSp: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  eQCSxiZK: {
+  iJMTlcUw: {
     padding: 10
   },
-  ZxEQgEAu: {
+  nOycANSg: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  EmwxXzsB: {
+  YUdONuXT: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  jevTckSh: {
+  lMlbmkfS: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  LvlIrZzy: {
+  vgJsaCDh: {
     padding: 10
   },
-  RTrNaGgt: {
+  FbMvEawO: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  tkccUeWH: {
+  mLPrwiNw: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10
   },
-  MSworQfw: {
+  ZYOWfnmu: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  RjzzlhyD: {
+  QIHsVjbv: {
     marginLeft: 10
   },
-  bLIkCxmO: {
+  SMMbhIeE: {
     width: "100%",
     height: 200,
     marginTop: 10
   },
-  NgXkKWhN: {
+  InBIIeKF: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 10
   },
-  uGJUmuVv: {
+  THdlPTyL: {
     marginTop: 10
   },
-  BbDnFAif: {
+  oYDJurOr: {
     marginTop: 10
   },
-  Osxiafes: {
+  CzQkQuab: {
     padding: 10
   },
-  bRhTbaHr: {
+  muDuZlRv: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  IzphhtMu: {
+  NuleBtjq: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10
   },
-  EmQBkLAa: {
+  BNnzYXQX: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  KZBSgTVh: {
+  ppEIgSyl: {
     marginLeft: 10
   },
-  XJIrtVCV: {
+  oKWSKGjE: {
     marginTop: 10
   }
 });
