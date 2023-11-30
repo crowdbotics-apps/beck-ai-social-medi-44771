@@ -18,28 +18,28 @@ const AccountSetupScreen = () => {
     username: 'user3',
     followers: 300
   }];
-  return <SafeAreaView style={_styles.fVTpxBPo}>
-      <View style={_styles.VvtNBuYV}>
-        <Text style={_styles.soxAJZzW}>Generate Username</Text>
-        <Text style={_styles.lIRINJBD}>Registered email</Text>
-        <TextInput style={_styles.XeswZQJw} onChangeText={text => setUsername(text)} value={username} placeholder="Unique username" />
+  return <SafeAreaView style={_styles.dEGWxBvX}>
+      <View style={_styles.fXRStBcr}>
+        <Text style={_styles.hcVzrSWt}>Generate Username</Text>
+        <Text style={_styles.MvBVRMyV}>Registered email</Text>
+        <TextInput style={_styles.DjYzcyul} onChangeText={text => setUsername(text)} value={username} placeholder="Unique username" />
         <Button title="Continue" onPress={() => console.log('Continue')} />
       </View>
-      <View style={_styles.LNmRUrqu}>
-        <Text style={_styles.MRfZmUba}>Connect with friends</Text>
-        <TextInput style={_styles.YQkVArWi} onChangeText={text => setSearch(text)} value={search} placeholder="Search" />
+      <View style={_styles.PvJrTQYh}>
+        <Text style={_styles.SUREsVmY}>Connect with friends</Text>
+        <TextInput style={_styles.rVMbeOdQ} onChangeText={text => setSearch(text)} value={search} placeholder="Search" />
         <FlatList data={users} renderItem={({
         item
-      }) => <View style={_styles.ECIETRLk}>
-              <Image style={_styles.TyFMmrJf} source={{
+      }) => <View style={_styles.SKfAijND}>
+              <Image style={_styles.QpJSOojK} source={{
           uri: 'https://tinyurl.com/42evm3m3'
         }} />
-              <View style={_styles.UFYpSaHV}>
-                <Text style={_styles.qjlYWejF}>{item.username}</Text>
-                <Text style={_styles.gxhIBrHP}>{item.followers} followers</Text>
+              <View style={_styles.DYfkBMqT}>
+                <Text style={_styles.JFAlhwLH}>{item.username}</Text>
+                <Text style={_styles.DvaEXoLN}>{item.followers} followers</Text>
               </View>
-              <TouchableOpacity style={_styles.nysRyqjy}>
-                <Text style={_styles.msvwWLKj}>Follow</Text>
+              <TouchableOpacity style={_styles.fPkVQddA}>
+                <Text style={_styles.UmfKpery}>Follow</Text>
               </TouchableOpacity>
             </View>} keyExtractor={item => item.id} />
         <Button title="Continue" onPress={() => console.log('Continue')} />
@@ -50,68 +50,68 @@ const AccountSetupScreen = () => {
 export default AccountSetupScreen;
 
 const _styles = StyleSheet.create({
-  fVTpxBPo: {
+  dEGWxBvX: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  VvtNBuYV: {
+  fXRStBcr: {
     padding: 20
   },
-  soxAJZzW: {
+  hcVzrSWt: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  lIRINJBD: {
+  MvBVRMyV: {
     fontSize: 16,
     color: "#888"
   },
-  XeswZQJw: {
+  DjYzcyul: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginTop: 10
   },
-  LNmRUrqu: {
+  PvJrTQYh: {
     padding: 20
   },
-  MRfZmUba: {
+  SUREsVmY: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  YQkVArWi: {
+  rVMbeOdQ: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginTop: 10
   },
-  ECIETRLk: {
+  SKfAijND: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10
   },
-  TyFMmrJf: {
+  QpJSOojK: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  UFYpSaHV: {
+  DYfkBMqT: {
     marginLeft: 10
   },
-  qjlYWejF: {
+  JFAlhwLH: {
     fontSize: 16,
     fontWeight: "bold"
   },
-  gxhIBrHP: {
+  DvaEXoLN: {
     fontSize: 14,
     color: "#888"
   },
-  nysRyqjy: {
+  fPkVQddA: {
     marginLeft: "auto",
     backgroundColor: "#007BFF",
     padding: 10,
     borderRadius: 5
   },
-  msvwWLKj: {
+  UmfKpery: {
     color: "#fff"
   }
 });
