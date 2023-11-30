@@ -1,6 +1,5 @@
-import { StyleSheet } from "react-native";
 import React from 'react';
-import { SafeAreaView, View, Text, Image, Button, FlatList, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, Button, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 const dummyData = [{
   id: '1',
   card: '**** **** **** 1234'
@@ -21,48 +20,57 @@ const PaymentScreen = ({
       <Text>{item.card}</Text>
     </TouchableOpacity>;
 
-  return <SafeAreaView style={_styles.tLFsdJgK}>
-      <Text style={_styles.CYZJKmTK}>Payment Amount</Text>
-      <Text style={_styles.vnYplRVs}>Details of the selected Model</Text>
-      <Text style={_styles.VOgVsOrL}>Select the card</Text>
+  return <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>Payment Amount</Text>
+      <Text style={styles.details}>Details of the Selected Model</Text>
+      <Text style={styles.addCardDetails}>Add card details</Text>
+      <TextInput placeholder="Card holder name" style={styles.input} />
+      <TextInput placeholder="Account number" style={styles.input} />
+      <TextInput placeholder="CVV" style={styles.input} />
+      <Button title="Pay" onPress={() => console.log('Payment successful')} />
+      <Text style={styles.listTitle}>List of added cards</Text>
       <FlatList data={dummyData} renderItem={renderItem} keyExtractor={item => item.id} />
-      <Button title="Add a new card" onPress={() => navigation.navigate('AddCard')} />
-      <View style={_styles.TYjNnpgU}>
+      <View style={styles.buttonContainer}>
         <Button title="Pay" onPress={() => console.log('Payment successful')} />
         <Button title="Cancel" onPress={() => navigation.goBack()} />
       </View>
-      <Image style={_styles.nWAsjxGu} source={{
-      uri: 'https://tinyurl.com/42evm3m3'
-    }} />
     </SafeAreaView>;
 };
 
 export default PaymentScreen;
-
-const _styles = StyleSheet.create({
-  tLFsdJgK: {
+const styles = StyleSheet.create({
+  container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  CYZJKmTK: {
+  title: {
     fontSize: 24,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   },
-  vnYplRVs: {
+  details: {
     fontSize: 20
   },
-  VOgVsOrL: {
+  addCardDetails: {
     fontSize: 18,
     marginTop: 20
   },
-  TYjNnpgU: {
-    flexDirection: "row",
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    width: '80%',
+    marginTop: 10,
+    padding: 10
+  },
+  listTitle: {
+    fontSize: 18,
     marginTop: 20
   },
-  nWAsjxGu: {
-    width: 100,
-    height: 100,
-    marginTop: 20
+  buttonContainer: {
+    flexDirection: 'row',
+    marginTop: 20,
+    justifyContent: 'space-between',
+    width: '60%'
   }
 });
